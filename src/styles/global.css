@@ -1,0 +1,125 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  background-color: black;
+  color: #f15991;
+  
+}
+
+html {
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.App {
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* 6. Page Styles */
+
+#navTwo{
+  display: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+nav img{
+  height: 150px;
+}
+
+ul{
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+li{
+  list-style-type: none;
+  margin: 20px;
+}
+
+li a{
+  text-decoration: none;
+  color: #F6F4F3;
+  position: relative;
+}
+
+
+
+
+@media (max-width: 586px) {
+  .navOne{
+    display:none;
+  }
+
+  #navTwo{
+    display: flex;
+    align-items: center;
+    background-color: black;
+  }
+
+  #navTwo img{
+    max-height: 150px;
+  }
+ 
+
+  main h1{
+    font-size: 30pt;
+  }
+
+ul, li a, li{
+  background-color: #F6F4F3;
+}
+
+}
+
+main p{
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+main h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px 10px;
+  color: #F6F4F3;
+}
+
+main img{
+  max-height: 250px;
+  margin: 30px auto;
+}
+
+
+
