@@ -1,11 +1,11 @@
 import React from 'react'
 import logo from "../../static/uLogoWhite.png"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+// import { AnchorLink } from "gatsby-plugin-anchor-links";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Button } from "../components/Button";
 import { MenuButton } from './MenuButton';
-import { graphql, useStaticQuery } from 'gatsby';
-import {Img} from 'gatsby-plugin-image';
+// import { graphql, useStaticQuery } from 'gatsby';
+// import {Img} from 'gatsby-plugin-image';
 
 
 
@@ -21,18 +21,18 @@ function NavBar(){
     // `)
 
     // const {title} = data.site.siteMetadata;
-    const data =  useStaticQuery(graphql`
-        query Logo {
-            file(relativePath: {eq: "uLogoWhite.png"}) {
-            childImageSharp {
-                fluid {
-                ...GatsbyImageSharpFluid
-                }
-            }
-            }
-        }
-    `)
-    console.log(data)
+    // const data =  useStaticQuery(graphql`
+    //     query Logo {
+    //         file(relativePath: {eq: "uLogoWhite.png"}) {
+    //         childImageSharp {
+    //             fluid {
+    //             ...GatsbyImageSharpFluid
+    //             }
+    //         }
+    //         }
+    //     }
+    // `)
+    // console.log(data)
 
 return (
     <div className='z-50'>

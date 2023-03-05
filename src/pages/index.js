@@ -1,19 +1,19 @@
 import * as React from "react"
-import { useState } from "react"
+// import { useState } from "react"
 import { Layout } from "../components/Layout"
 import uche from "../../static/uche.png"
 import uchebw from "../../static/uchebw.png"
 import uchecolor from "../../static/uchecolor.png"
-import divider, { Divider } from "../components/Divider"
-import { Button } from "../components/Button";
-import { graphql } from "gatsby"
+// import divider, { Divider } from "../components/Divider"
+// import { Button } from "../components/Button";
+// import { graphql } from "gatsby"
 
-export default function Home({ data }) {
-  console.log(data)
+export default function Home() {
+  // console.log(data)
   // const { technologies } = data.technologies.nodes[0];
   // const { metadata } = data.metadata.siteMetadata;
 
-  const [currentAboutTab, setCurrentAboutTab] = useState();
+  // const [currentAboutTab, setCurrentAboutTab] = useState();
 
   return <div>
     <Layout>
@@ -58,20 +58,20 @@ export default function Home({ data }) {
 }
 
 // example page query
-export const query = graphql`
-query MyTechnologies {
-  technologies: allMarkdownRemark {
-    nodes {
-      html
-    }
-  }
-  metadata: site {
-    siteMetadata {
-      contact
-      copyright
-      description
-      title
-    }
-  }
-}
-`
+// export const query = graphql`
+// query MyTechnologies {
+//   technologies: allMarkdownRemark {
+//     nodes {
+//       html
+//     }
+//   }
+//   metadata: site {
+//     siteMetadata {
+//       contact
+//       copyright
+//       description
+//       title
+//     }
+//   }
+// }
+// `
