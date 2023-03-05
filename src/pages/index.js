@@ -19,7 +19,7 @@ export default function Home() {
     <Layout>
 
       <div className="w-5/6 mx-auto md:h-screen mb-60 align-center place-items-center mainGrid"  id="home">
-        <h1 id="home">Full-Stack Web Developer</h1>
+        <h1 id="home">Full-Stack New Developer</h1>
         <p> Hi, I'm <span>Uchenna</span>. I code and create beautiful, minimalist digital experiences.</p>
         <img src={uche} alt="pic of Uchenna"/>
       </div>
