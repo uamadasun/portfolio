@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
+import "../styles/global.css"
 
 export const Layout = ({children}) => {
   return (
@@ -8,9 +9,7 @@ export const Layout = ({children}) => {
         <div className='content'>
            {children}
         </div>
-        <footer>
-            <p>Made with love by me.</p>
-        </footer>
+
     </div>
   )
 }
