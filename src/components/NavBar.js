@@ -4,15 +4,41 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Button } from "../components/Button";
 import { MenuButton } from './MenuButton';
+import { graphql, useStaticQuery } from 'gatsby';
+import {Img} from 'gatsby-plugin-image';
 
 
 
 function NavBar(){
+    // const data = useStaticQuery(graphql`
+    //     query SiteInfo {
+    //         site {
+    //             siteMetadata {
+    //                 title
+    //             }
+    //         }
+    //     }
+    // `)
+
+    // const {title} = data.site.siteMetadata;
+    const data =  useStaticQuery(graphql`
+        query Logo {
+            file(relativePath: {eq: "uLogoWhite.png"}) {
+            childImageSharp {
+                fluid {
+                ...GatsbyImageSharpFluid
+                }
+            }
+            }
+        }
+    `)
+    console.log(data)
 
 return (
     <div className='z-50'>
         <nav className='navOne'>
             <button><img src={logo} alt="Uchenna logo" onClick={()=>scrollTo('#home')}/></button>
+            {/* <Img fluid={data.file.childImageSharp.fluid}/> */}
             <ul>
                 <li><Button sectionName="About"/></li>
                 <li><Button sectionName="Projects"/></li>
@@ -40,4 +66,4 @@ return (
   )
 }
 
-export default NavBar
+export default NavBar;
