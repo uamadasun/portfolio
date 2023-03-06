@@ -6,8 +6,9 @@ export default function Home(){
   return
     <div>
       
-        <h1>Contact</h1>
+        <Layout>
         <p>Thank you for your submission!</p>
+        </Layout>
       
     </div>
   
