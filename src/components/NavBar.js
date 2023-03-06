@@ -13,8 +13,8 @@ function NavBar(){
 
 
 return (
-    <div className='z-50'>
-        <nav className='navOne'>
+    <div className='z-40'>
+        <nav className='navOne '>
             <button><img src={logo} alt="Uchenna logo" onClick={()=>scrollTo('#home')}/></button>
             {/* <Img fluid={data.file.childImageSharp.fluid}/> */}
             <ul>
@@ -25,7 +25,7 @@ return (
             </ul>
         </nav>
 
-        <nav className="navbar bg-base-500 z-50" id="navTwo">
+        <nav className="navbar bg-base-500 z-40" id="navTwo">
             <button><img src={logo} alt="Uchenna.io logo" onClick={()=>scrollTo('#home')}/></button>
             <div className="navbar-end">
                 <div className="dropdown">

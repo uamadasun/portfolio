@@ -284,6 +284,10 @@ footer p{
   .aboutMe .uche-bw {
     display: none;
   }
+
+  
+
+
 }
 
 @media (max-width: 768px) {
@@ -322,6 +326,21 @@ footer p{
     height: 50px;
     margin: 10px;
   }
+
+  form {
+    max-width: 100%;  
+    /* background-color: pink;   */
+  }
+  
+  form input, label{
+    margin-left: 55%;
+  }
+
+  form .btn{
+    width: 25%;
+    margin-left: 27%;
+  }
+
 }
 
 @media (max-width: 406px) {
@@ -364,6 +383,19 @@ footer p{
 
   .mainGrid img{
     grid-area: 7 / 2 /8 / span 3;
+  }
+
+
+  form label, form input{
+    margin-left: 40%;
+    margin-top:5px ;
+    /* padding-bott: 10px; */
+    /* margin-bottom: 30px; */
+  }
+
+
+  form .btn{
+    margin-left: 27%;
   }
 
 }
