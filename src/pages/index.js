@@ -4,15 +4,11 @@ import { Layout } from "../components/Layout"
 import uche from "../../static/uche.png"
 import uchebw from "../../static/uchebw.png"
 import uchecolor from "../../static/uchecolor.png"
-// import divider, { Divider } from "../components/Divider"
-// import { Button } from "../components/Button";
 import { graphql } from "gatsby"
 import { ContactForm } from "../components/ContactForm"
-// import images from "../images/"
 
 export default function Home(data) {
   console.log(data.data.allFile.nodes)
-  // const {technologies} = data.data.allFile.nodes;
 
   const [currentAboutTab, setCurrentAboutTab] = useState(true);
 
