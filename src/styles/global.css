@@ -55,7 +55,10 @@
 
 
 /* 6. Page Styles */
-
+p{
+  text-align: center;
+  
+}
 #navTwo{
   display: none;
 }
@@ -107,9 +110,10 @@ li button:hover {
 }
 
 .mainGrid > img{
-  max-height: 300px;
-  margin: 30px auto;
+  max-height: 250px;
+  margin: 50px auto;
   grid-area: 4 / 2 / 4 / span 3;
+  /* margin-top: ; */
 }
 
 .mainGrid span{
@@ -200,14 +204,15 @@ li a{
   /* padding; */
 }
 
-.aboutBox .btn, form .btn{
+.aboutBox .btn, form .btn, .robotCard .btn{
   background-color: rgb(214,232,101);
   color: black;
   border: 1px solid rgb(214,232,101);
   font-weight: 700;
+  max-width: 100%;
 }
 
-.aboutBox .btn:hover, form .btn:hover{
+.aboutBox .btn:hover, form .btn:hover, .robotCard .btn:hover{
   color: rgb(214,232,101);
   background-color: black;
 }
@@ -228,6 +233,18 @@ form .btn{
   margin-left: 25%;
 }
 
+.robotCard{
+  margin: 50px auto;
+  /* border: 2px solid red; */
+}
+
+.robotCard h2, h1{
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 40px;
+  /* background-color: red; */
+}
 
 
 

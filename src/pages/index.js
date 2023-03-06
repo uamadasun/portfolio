@@ -65,9 +65,9 @@ export default function Home(data) {
 
       </div> */}
 
-      <div>
+      <div className="contactForm">
         <h1 id="contact">Contact Me</h1>
-        <p>I am available to help you and your organization build an amazing website. Fill out the form below and I will reach out within 24 hours.</p>
+        <p>Let me know how I can help your organization by filling out the form below with details of your project.</p>
         <ContactForm/>
 
 
