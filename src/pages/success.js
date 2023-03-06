@@ -2,7 +2,7 @@ import * as React from "react"
 import { Layout } from "../components/Layout"
 
 
-export default function Success() {
+  const Success = () => {
 
   
   return <div>
@@ -19,3 +19,5 @@ export default function Success() {
     
     </div>
 }
+
+export default Success;
