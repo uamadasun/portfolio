@@ -7,6 +7,7 @@ import uchecolor from "../../static/uchecolor.png"
 // import divider, { Divider } from "../components/Divider"
 // import { Button } from "../components/Button";
 import { graphql } from "gatsby"
+import { ContactForm } from "../components/ContactForm"
 // import images from "../images/"
 
 export default function Home(data) {
@@ -37,13 +38,13 @@ export default function Home(data) {
                     With web development, I find that what Confucius said is true: <span>"Choose a job you love and you'll never have to work a day in your life."</span> Web development is my passion, and I look forward to sharing it with the world and helping you build an accessible and scalable web application you will love.
                   </p>
                 {/* {technologies} */}
-                <div className="card-actions justify-end">
-                  <button className="btn" onClick={()=>setCurrentAboutTab(!currentAboutTab)}>{currentAboutTab ? "Languages/Technologies" : "About Me"}</button>
+                <div className="card-actions justify-center">
+                  <button className="btn" onClick={()=>setCurrentAboutTab(!currentAboutTab)}>{currentAboutTab ? "Languages & Technologies" : "About Me"}</button>
                 </div>
               </div>
             </div>
           :
-            <div className="aboutBox card w-96 bg-primary text-primary-content">
+            <div className="aboutBox card w-96 h-50 bg-primary text-primary-content">
                 <div className="card-body ">
                   <h2 className="card-title">Languages/Technologies</h2>
                   <div className="technologies">
@@ -51,7 +52,7 @@ export default function Home(data) {
                       <img src={`${technology.relativePath}`} alt={`${technology.relativePath.substring(0,technology.relativePath.indexOf("."))}`}/>
                     ))}
                   </div>
-                <div class="card-actions justify-end">
+                <div class="card-actions justify-center">
                   <button className="btn" onClick={()=>setCurrentAboutTab(!currentAboutTab)}>{currentAboutTab ? "Technologies I Use" : "About Me"}</button>
                 </div>
               </div>
@@ -66,12 +67,13 @@ export default function Home(data) {
 
       {/* <div id="projects">
 
-      </div>
+      </div> */}
 
       <div id="contact">
+        <ContactForm/>
 
 
-      </div> */}
+      </div>
     </Layout>
     <footer>
       <p className="copy">

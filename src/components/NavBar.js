@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../static/uLogo.png"
+import logo from "../../static/logoPink.png"
 // import { AnchorLink } from "gatsby-plugin-anchor-links";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Button } from "../components/Button";
@@ -10,29 +10,7 @@ import { MenuButton } from './MenuButton';
 
 
 function NavBar(){
-    // const data = useStaticQuery(graphql`
-    //     query SiteInfo {
-    //         site {
-    //             siteMetadata {
-    //                 title
-    //             }
-    //         }
-    //     }
-    // `)
 
-    // const {title} = data.site.siteMetadata;
-    // const data =  useStaticQuery(graphql`
-    //     query Logo {
-    //         file(relativePath: {eq: "uLogoWhite.png"}) {
-    //         childImageSharp {
-    //             fluid {
-    //             ...GatsbyImageSharpFluid
-    //             }
-    //         }
-    //         }
-    //     }
-    // `)
-    // console.log(data)
 
 return (
     <div className='z-50'>
@@ -40,6 +18,7 @@ return (
             <button><img src={logo} alt="Uchenna logo" onClick={()=>scrollTo('#home')}/></button>
             {/* <Img fluid={data.file.childImageSharp.fluid}/> */}
             <ul>
+                <li><Button sectionName="Home"/></li>
                 <li><Button sectionName="About"/></li>
                 <li><Button sectionName="Projects"/></li>
                 <li><Button sectionName ="Contact"/></li>
