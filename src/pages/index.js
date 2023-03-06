@@ -30,8 +30,8 @@ export default function Home(data) {
                 <div class="card-body">
                   <h2 class="card-title">About Me </h2>
                   <p>
-                    Hi! My name is Uchenna and I am a web developer open for work. 
-                    With web development, I find that what Confucius said is true: <span>"Choose a job you love and you'll never have to work a day in your life."</span> Web development is my passion, and I look forward to sharing it with the world and helping you build an accessible and scalable web application you will love.
+                    Hi! I am a web developer open for work. 
+                    As a developer, I find that what Confucius said is true: <span>"Choose a job you love and you'll never have to work a day in your life."</span> Web development is my passion, and I look forward to sharing it with the world and helping you build an accessible and scalable web application you will love.
                   </p>
                 {/* {technologies} */}
                 <div className="card-actions justify-center">
@@ -42,7 +42,7 @@ export default function Home(data) {
           :
             <div className="aboutBox card w-96 h-50 bg-primary text-primary-content">
                 <div className="card-body ">
-                  <h2 className="card-title">Languages/Technologies</h2>
+                  <h2 className="card-title">Languages & Technologies</h2>
                   <div className="technologies">
                     {data.data.allFile.nodes.map((technology, idx) => (
                       <div key={idx}>
