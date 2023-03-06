@@ -2,13 +2,13 @@ import * as React from "react"
 import { Layout } from "../components/Layout"
 
 
-  const Success = () => {
+const Success = () => {
 
   
   return <div>
     <Layout>
 
-      <p>Sucess! I will get back to you within 24 hours.</p>
+      <p>Success! I will get back to you within 24 hours.</p>
     </Layout>
     <footer>
       <p className="copy">
