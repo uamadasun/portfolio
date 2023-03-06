@@ -44,8 +44,11 @@ export default function Home(data) {
                 <div className="card-body ">
                   <h2 className="card-title">Languages/Technologies</h2>
                   <div className="technologies">
-                    {data.data.allFile.nodes.map((technology) => (
-                      <img src={`${technology.relativePath}`} alt={`${technology.relativePath.substring(0,technology.relativePath.indexOf("."))}`}/>
+                    {data.data.allFile.nodes.map((technology, idx) => (
+                      <div key={idx}>
+                        <img src={`${technology.relativePath}`} alt={`${technology.relativePath.substring(0,technology.relativePath.indexOf("."))}`}/>
+                        </div>
+                      
                     ))}
                   </div>
                 <div class="card-actions justify-center">
