@@ -6,6 +6,7 @@ import uchebw from "../../static/uchebw.png"
 import uchecolor from "../../static/uchecolor.png"
 import { graphql } from "gatsby"
 import { ContactForm } from "../components/ContactForm"
+import { Technologies } from "../components/Technologies"
 
 export default function Home(data) {
   console.log(data.data.allFile.nodes)
@@ -44,6 +45,7 @@ export default function Home(data) {
                 <div className="card-body ">
                   <h2 className="card-title">Languages & Technologies</h2>
                   <div className="technologies">
+                    {/* <Technologies/> */}
                     {data.data.allFile.nodes.map((technology, idx) => (
                       <div key={idx}>
                         <img src={`${technology.relativePath}`} alt={`${technology.relativePath.substring(0,technology.relativePath.indexOf("."))}`}/>
