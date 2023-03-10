@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { useState } from "react"
 import { Layout } from "../components/Layout"
 import uche from "../../static/uche.png"
@@ -45,20 +44,7 @@ export default function Home(data) {
             <div className="aboutBox card w-96 h-50 bg-primary text-primary-content">
                 <div className="card-body ">
                   <h2 className="card-title">Languages & Technologies</h2>
-                  <div className="technologies">
-                    {/* <Technologies/> */}
-                    {data.data.allFile.nodes.map((technology, idx) => (
-                      <div key={idx} className="images">
-                        <img src={`${technology.relativePath}`} alt={`${technology.relativePath.substring(0,technology.relativePath.indexOf("."))}`}/>
-                        <StaticImage
-                          src="../images/javascript.png"
-                          alt="javascript"
-                        
-                        />
-                        </div>
-                      
-                    ))}
-                  </div>
+                  <Technologies/>
                 <div className="card-actions justify-center">
                   <button className="btn" onClick={()=>setCurrentAboutTab(!currentAboutTab)}>{currentAboutTab ? "Technologies I Use" : "About Me"}</button>
                 </div>

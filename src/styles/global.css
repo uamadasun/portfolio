@@ -200,9 +200,10 @@ li a{
 }
 .technologies img{
   background-color: white;
-  height: 50px;
-  margin: 10px;
-  /* padding; */
+  height: 75px;
+  /* margin:; */
+  /* margin: 10px; */
+  /* padding: 5px; */
 }
 
 .aboutBox .btn, form .btn, .robotCard .btn{
