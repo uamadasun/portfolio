@@ -428,8 +428,6 @@ footer p{
   form label, form input{
     margin-left: 40%;
     margin-top:5px ;
-    /* padding-bott: 10px; */
-    /* margin-bottom: 30px; */
   }
 
 
@@ -473,7 +471,7 @@ footer p{
 
 .left .icon{
   width: auto;
-  max-height: 250px;
+  max-height: 150px;
   padding: 2px;
   z-index:1;
   margin-bottom: 20px;
