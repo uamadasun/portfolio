@@ -7,6 +7,7 @@ import uchecolor from "../../static/uchecolor.png"
 import { graphql } from "gatsby"
 import { ContactForm } from "../components/ContactForm"
 import { Technologies } from "../components/Technologies"
+import { Projects } from "../components/Projects"
 
 export default function Home(data) {
   console.log(data.data.allFile.nodes)
@@ -58,9 +59,12 @@ export default function Home(data) {
 
 
 
-      {/* <div id="projects">
+      <section id="projects" className="projects">
+        <h1>My Recent Projects</h1>
+        <Projects/>
+        
 
-      </div> */}
+      </section> 
 
       <div className="contactForm">
         <h1 id="contact">Contact Me</h1>

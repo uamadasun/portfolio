@@ -114,7 +114,7 @@ export const Technologies = () => {
             src="../images/postman.png"
             height={75}
             alt="postman"
-            // placeholder="tracedSVG"
+            placeholder="tracedSVG"
         />
 
     </div>

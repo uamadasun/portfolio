@@ -247,7 +247,10 @@ form .btn{
   min-width: 50%;
 }
 
-
+.projectMenu{
+  display: flex;
+  justify-content: space-around;
+}
 
 
 
@@ -296,7 +299,7 @@ footer p{
   }
 
   p{
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .aboutMe .uche-bw {
@@ -391,7 +394,7 @@ footer p{
   }
   .mainGrid p{
     grid-area: 4 / 1 / 7 / 6;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .mainGrid h1{
