@@ -58,7 +58,6 @@
 p{
   text-align: center;
   font-family: "Rubik", sans-serif;
-  
 }
 #navTwo{
   display: none;
@@ -208,7 +207,7 @@ li a{
   max-width: 100%;
 }
 
-.aboutBox .btn:hover, form .btn:hover, .robotCard .btn:hover{
+.aboutBox .btn:hover, form .btn:hover, .robotCard .btn:hover, .btn:hover{
   color: rgb(214,232,101);
   background-color: black;
 }
@@ -219,6 +218,13 @@ form {
   max-width: 50%;
   background-color: white;
   
+}
+
+.contactForm p{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1rem;
+  /* text-align: left; */
 }
 
 form input, label{

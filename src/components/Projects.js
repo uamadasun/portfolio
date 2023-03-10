@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import LazyArtis from "../images/LazyArtis2.gif"
 import Picturest from "../images/Picturest.gif"
@@ -7,10 +7,9 @@ import Strikify from "../images/Strikify.gif"
 
 
 export const Projects = () => {
+    
   return (
     <div>
-
-    
         <div className="carousel w-1/2 projectMenu">
             <div id="lazyArtis" className="carousel-item w-full">
                 <img src={LazyArtis}
