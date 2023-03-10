@@ -1,4 +1,5 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import { useState } from "react"
 import { Layout } from "../components/Layout"
 import uche from "../../static/uche.png"
@@ -28,8 +29,8 @@ export default function Home(data) {
             currentAboutTab ?
 
               <div className="aboutBox card w-96 bg-primary text-primary-content">
-                <div class="card-body">
-                  <h2 class="card-title">About Me </h2>
+                <div className="card-body">
+                  <h2 className="card-title">About Me </h2>
                   <p>
                     Hi! I am a web developer open for work. 
                     As a developer, I find that what Confucius said is true: <span>"Choose a job you love and you'll never have to work a day in your life."</span> Web development is my passion, and I look forward to sharing it with the world and helping you build an accessible and scalable web application you will love.
@@ -47,13 +48,18 @@ export default function Home(data) {
                   <div className="technologies">
                     {/* <Technologies/> */}
                     {data.data.allFile.nodes.map((technology, idx) => (
-                      <div key={idx}>
+                      <div key={idx} className="images">
                         <img src={`${technology.relativePath}`} alt={`${technology.relativePath.substring(0,technology.relativePath.indexOf("."))}`}/>
+                        <StaticImage
+                          src="../images/javascript.png"
+                          alt="javascript"
+                        
+                        />
                         </div>
                       
                     ))}
                   </div>
-                <div class="card-actions justify-center">
+                <div className="card-actions justify-center">
                   <button className="btn" onClick={()=>setCurrentAboutTab(!currentAboutTab)}>{currentAboutTab ? "Technologies I Use" : "About Me"}</button>
                 </div>
               </div>
