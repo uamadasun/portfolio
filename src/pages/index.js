@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import { ContactForm } from "../components/ContactForm"
 import { Technologies } from "../components/Technologies"
 import { Projects } from "../components/Projects"
+import { Social } from "../components/Social"
 
 export default function Home(data) {
   console.log(data.data.allFile.nodes)
@@ -17,6 +18,7 @@ export default function Home(data) {
   
   return <div>
     <Layout>
+      
 
       <div className="w-5/6 mx-auto md:h-screen mb-60 align-center place-items-center mainGrid"  id="home">
         <h1 id="home">Full-Stack Web Developer</h1>
@@ -79,6 +81,7 @@ export default function Home(data) {
         Built with &#x2661; by Uchenna
       </p>
 </footer>
+<Social/>
 
     
     </div>

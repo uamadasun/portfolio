@@ -18,11 +18,14 @@
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
   background-color:white;
+  /* background: transparent; */
   color: #f15991;
   margin: 0; 
   padding: 0;
 
 }
+
+
 
 
 /* html{
@@ -221,8 +224,8 @@ form {
 }
 
 .contactForm p{
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 1rem;
   /* text-align: left; */
 }
@@ -258,6 +261,12 @@ form .btn{
   justify-content: space-around; */
   margin: 0 auto;
 }
+
+.carousel{
+  min-width: 400px;
+}
+
+
 
 
 
@@ -301,10 +310,6 @@ footer p{
     font-size: 3em;
   }
 
-  ul, button, li{
-    /* background-color: #F6F4F3; */
-  }
-
   p{
     font-size: 1.2em;
   }
@@ -313,9 +318,14 @@ footer p{
     display: none;
   }
 
-  
-
-
+  .social .right{
+    right: 0%;
+    bottom: 0%;
+  }
+  .social .left{
+    right: 99%;
+    bottom: 0%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -426,5 +436,43 @@ footer p{
     margin-left: 27%;
   }
 
+}
+
+.btn-circle, .btn-circle:active, .btn-circle:hover{
+  background-color: white;
+  border: 1px solid white;
+}
+
+.right{
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  background: transparent !important;
+}
+
+
+.left{
+  position: fixed;
+  right: 95%;
+  bottom: 15%;
+  background: transparent !important;
+
+}
+
+.right .icon{
+  width: auto;
+  max-height: 250px;
+  z-index: 5;
+  background: transparent !important;
+  }
+
+.left .icon{
+  width: auto;
+  max-height: 250px;
+  padding: 2px;
+  z-index:1;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  background: transparent !important;
 }
 
