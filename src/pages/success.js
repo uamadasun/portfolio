@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Layout } from "../components/Layout"
-import robotGif from "../../static/robotGif.gif"
+import robotGif from "../../static/robotGIF.gif"
 import { Button } from "../components/Button"
 import { Link } from "gatsby"
 
