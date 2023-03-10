@@ -170,9 +170,6 @@ li a{
   font-size: 1rem;
   max-height: 50%;
   border-radius: 25px;
-  /* overflow: visible; */
-
-  /* overflow: scroll; */
 }
 
 .aboutBox p{
@@ -201,9 +198,6 @@ li a{
 .technologies img{
   background-color: white;
   height: 75px;
-  /* margin:; */
-  /* margin: 10px; */
-  /* padding: 5px; */
 }
 
 .aboutBox .btn, form .btn, .robotCard .btn{
@@ -249,7 +243,8 @@ form .btn{
 }
 
 .robotCard button {
-  margin: 0 auto;
+  margin: 0 auto 0 15%;
+  min-width: 50%;
 }
 
 

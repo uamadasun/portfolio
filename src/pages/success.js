@@ -15,7 +15,7 @@ const Success = () => {
           <h2>Success!</h2>
           <figure><img src={robotGif} alt="robot waving hello" /></figure>
           <p>Thank you for reaching out! I will get back to you in less than 24 hours.</p>
-          <Link to="/"><button className="btn" >Home</button></Link>
+          <Link to="/"><button className="btn" >Return to my portfolio</button></Link>
         </div>
         
         
