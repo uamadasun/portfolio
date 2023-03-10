@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Layout } from "../components/Layout"
-import robotGIF from "../../static/robotGIF.gif"
+import robotGif from "../../static/robotGif.gif"
 import { Link } from "gatsby"
 
 
@@ -12,7 +12,7 @@ const Success = () => {
     
         <div className="card-body">
           <h2>Success!</h2>
-          <figure><img src={robotGIF} alt="robot waving hello" /></figure>
+          <figure><img src={robotGif} alt="robot waving hello" /></figure>
           <p>Thank you for reaching out! I will get back to you in less than 24 hours.</p>
           <Link to="/"><button className="btn" >Return to my portfolio</button></Link>
         </div>
