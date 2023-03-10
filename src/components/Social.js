@@ -12,7 +12,7 @@ export const Social = () => {
   return (
     <div className='social'>
       <div className='right'>
-        <a href={'mailto:info@uchenna.io'}><img src={email} onMouseOver={e => e.currentTarget.src = emailGreen} onMouseOut={e => e.currentTarget.src = email}
+        <a href={'mailto:info@uchenna.io'} target='_blank'><img src={email} onMouseOver={e => e.currentTarget.src = emailGreen} onMouseOut={e => e.currentTarget.src = email}
           alt="email address" className='icon'
         /></a> 
       </div>
