@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import LazyArtis from "../images/LazyArtis2.gif"
 import Picturest from "../images/Picturest.gif"
 import Strikify from "../images/Strikify.gif"
@@ -12,21 +11,21 @@ export const Projects = () => {
     <div>
         <div className="carousel w-1/2 projectMenu">
             <div id="lazyArtis" className="carousel-item w-full">
-                <a href="https://github.com/uamadasun/LazyArtis"><img src={LazyArtis}
+                <a href="https://github.com/uamadasun/LazyArtis" target="_blank"><img src={LazyArtis}
                     // height={300}
                     alt="lazyartis" 
                     className="w-full" 
                 /></a>
             </div> 
             <div id="picturest" className="carousel-item w-full">
-                <a href="https://github.com/uamadasun/picturest"><img src={Picturest}
+                <a href="https://github.com/uamadasun/picturest" target="_blank"><img src={Picturest}
                     // height={300}
                     alt="picturest"
                     className="w-full" 
                 /></a>
             </div> 
             <div id="strikify" className="carousel-item w-full">
-                <a href="https://github.com/uamadasun/strikify"><img src={Strikify}
+                <a href="https://github.com/uamadasun/strikify" target="_blank"><img src={Strikify}
                     // height={300}
                     alt="strikify" 
                     className="w-full" 
