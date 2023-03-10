@@ -318,14 +318,7 @@ footer p{
     display: none;
   }
 
-  .social .right{
-    right: 0%;
-    bottom: 0%;
-  }
-  .social .left{
-    right: 99%;
-    bottom: 0%;
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -379,6 +372,15 @@ footer p{
     margin-left: 27%;
   }
 
+  .social .right{
+    right: 0%;
+    bottom: 0%;
+  }
+  .social .left{
+    right: 99%;
+    bottom: 0%;
+  }
+
 }
 
 @media (max-width: 406px) {
@@ -399,7 +401,6 @@ footer p{
   .mainGrid img{
     grid-area: 6 / 2 /8 / span 3;
   }
-  
 
 }
 
@@ -436,6 +437,10 @@ footer p{
     margin-left: 27%;
   }
 
+  .carousel{
+    max-width: 50%;
+  }
+
 }
 
 .btn-circle, .btn-circle:active, .btn-circle:hover{
@@ -462,7 +467,7 @@ footer p{
 .right .icon{
   width: auto;
   max-height: 250px;
-  z-index: 5;
+  z-index: 1;
   background: transparent !important;
   }
 
