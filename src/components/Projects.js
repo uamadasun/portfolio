@@ -11,25 +11,25 @@ export const Projects = () => {
     <div>
         <div className="carousel w-1/2 projectMenu">
             <div id="lazyArtis" className="carousel-item w-full">
-                <a href="https://github.com/uamadasun/LazyArtis" target="_blank"><img src={LazyArtis}
+                <img src={LazyArtis}
                     // height={300}
                     alt="lazyartis" 
                     className="w-full" 
-                /></a>
+                />
             </div> 
             <div id="picturest" className="carousel-item w-full">
-                <a href="https://github.com/uamadasun/picturest" target="_blank"><img src={Picturest}
+                <img src={Picturest}
                     // height={300}
                     alt="picturest"
                     className="w-full" 
-                /></a>
+                />
             </div> 
             <div id="strikify" className="carousel-item w-full">
-                <a href="https://github.com/uamadasun/strikify" target="_blank"><img src={Strikify}
+                <img src={Strikify}
                     // height={300}
                     alt="strikify" 
                     className="w-full" 
-                /></a>
+                />
                 
             </div> 
         </div> 
