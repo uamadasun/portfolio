@@ -59,8 +59,8 @@ export default function Home(data) {
 
 
 
-      <section id="projects" className="projects">
-        <h1>My Recent Projects</h1>
+      <section className="projects">
+        <h1 id="projects">My Recent Projects</h1>
         <Projects/>
         
 

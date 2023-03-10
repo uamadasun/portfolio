@@ -200,7 +200,7 @@ li a{
   height: 75px;
 }
 
-.aboutBox .btn, form .btn, .robotCard .btn{
+.aboutBox .btn, form .btn, .robotCard .btn, .btn{
   background-color: rgb(214,232,101);
   color: black;
   border: 1px solid rgb(214,232,101);
@@ -248,8 +248,9 @@ form .btn{
 }
 
 .projectMenu{
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
+  margin: 0 auto;
 }
 
 
