@@ -262,8 +262,23 @@ form .btn{
   margin: 0 auto;
 }
 
-.carousel{
-  min-width: 400px;
+
+
+.card h3{
+  font-weight: 900;
+  color: rgb(255,179,193);
+  font-size: 0.5;
+  /* text-decoration: underline; */
+}
+
+.eachProject p, .eachProject h3{
+  background-color: black;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.eachProject p{
+  font-style: italic;
 }
 
 
@@ -465,18 +480,22 @@ footer p{
 
 .right .icon{
   width: auto;
-  max-height: 250px;
+  height: 150px;
   z-index: 1;
   background: transparent !important;
   }
 
 .left .icon{
-  width: auto;
-  max-height: 150px;
-  padding: 2px;
+  width: 50px;
+  height: 50px;
+  /* padding: 2px; */
   z-index:1;
   margin-bottom: 20px;
   margin-left: 30px;
   background: transparent !important;
 }
+
+
+
+
 
