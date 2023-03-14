@@ -10,7 +10,7 @@ export const Projects = () => {
     
   return (
 
-        <div className="md:carousel carousel-end justify-between rounded-box w-1/2 mx-auto ">
+        <div className="lg:carousel carousel-end justify-between rounded-box w-3/4 mx-auto ">
             <div className="carousel-item">
                 <div className="card  w-80  bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
@@ -18,7 +18,6 @@ export const Projects = () => {
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">LazyArtis</h2>
-                        <h4>Full Stack Developer</h4>
                         <div className = "eachProject">
                             <h3>AI Art generator</h3>
                             <p> This web application uses the Dall-e 2 AI system from OpenAI to generate images from text descriptions.</p>
@@ -40,7 +39,6 @@ export const Projects = () => {
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Picturest</h2>
-                        <h4>Back-End Developer</h4>
                         <div className = "eachProject">
                             <h3>Photo-based social media web application</h3>
                             <p> This website is inspired by Pinterest and allows users to share photos and connect with other users.</p>
@@ -62,7 +60,6 @@ export const Projects = () => {
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Strikify</h2>
-                        <h4>Full-Stack Developer</h4>
 
                         <div className = "eachProject">
                             <h3>Lightning network point of sale</h3>

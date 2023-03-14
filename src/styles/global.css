@@ -68,7 +68,7 @@ p{
 
 nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%; 
@@ -263,22 +263,22 @@ form .btn{
 }
 
 
-
 .card h3{
   font-weight: 900;
   color: rgb(255,179,193);
   font-size: 0.5;
-  /* text-decoration: underline; */
 }
 
 .eachProject p, .eachProject h3{
-  background-color: black;
   font-size: 0.75rem;
-  text-align: left;
 }
 
 .eachProject p{
   font-style: italic;
+}
+
+h4{
+  color: black;
 }
 
 
@@ -297,6 +297,45 @@ footer p{
   color: rgb(255,179,193);
 }
 
+
+.btn-circle, .btn-circle:active, .btn-circle:hover{
+  background-color: white;
+  border: 1px solid white;
+}
+
+.right{
+  position: fixed;
+  right: 5%;
+  bottom: 15%;
+  background: transparent !important;
+}
+
+
+.left{
+  position: fixed;
+  right:99.5%;
+  bottom: 15%;
+  background: transparent !important;
+
+}
+
+.right .icon{
+  width: auto;
+  height: 150px;
+  z-index: 1;
+  background: transparent !important;
+  }
+
+.left .icon{
+  width: 50px;
+  height: auto;
+  /* padding: 2px; */
+  z-index:1;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  background: transparent !important;
+}
+
 @media (max-width: 586px) {
   .navOne{
     display:none;
@@ -307,7 +346,7 @@ footer p{
     align-items: center;
     /* background-color: black; */
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     width: 100%; 
     margin: 0 auto;
@@ -396,6 +435,11 @@ footer p{
     bottom: 0%;
   }
 
+  .left .icon{
+    height: auto;
+    width: auto;
+  }
+
 }
 
 @media (max-width: 406px) {
@@ -450,50 +494,10 @@ footer p{
     margin-left: 27%;
   }
 
-  .carousel{
-    max-width: 50%;
-    
-  }
-
-}
-
-.btn-circle, .btn-circle:active, .btn-circle:hover{
-  background-color: white;
-  border: 1px solid white;
-}
-
-.right{
-  position: fixed;
-  right: 5%;
-  bottom: 15%;
-  background: transparent !important;
 }
 
 
-.left{
-  position: fixed;
-  right: 95%;
-  bottom: 15%;
-  background: transparent !important;
 
-}
-
-.right .icon{
-  width: auto;
-  height: 150px;
-  z-index: 1;
-  background: transparent !important;
-  }
-
-.left .icon{
-  width: 50px;
-  height: 50px;
-  /* padding: 2px; */
-  z-index:1;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  background: transparent !important;
-}
 
 
 
